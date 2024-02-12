@@ -28,13 +28,21 @@
         </div>
         <div id="leMdp">
             <label for="mdp">Mot de passe:</label>
-            <input type="password" name="mdp" id="mdp">
+            <input type="password" name="mdp" id="mdp" oninput="checkPassword()" required>
         </div>
+        <div id="motdepasse-info">
+            <span id="lengthCheck">8 caractères minimum</span>
+            <span id="uppercaseCheck">Au moins une majuscule</span>
+            <span id="numberCheck">Au moins un chiffre</span>
+            <span id="symbolCheck">Au moins un symbole</span>
+        </div>
+        <div id="resultat"></div>
         <div id="bouton">
-            <input type="submit" value="Envoyez">
+            <input type="submit" value="Envoyez" onclick="submitForm()">
         </div>
 
     </form>
+    <script src="script.js"></script>
 </body>
 
 </html>

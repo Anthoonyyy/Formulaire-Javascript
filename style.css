@@ -23,7 +23,7 @@ body {
     padding: 5px;
     box-shadow: 0 0 30px #1D2D44;
     border-radius: 10px;
-    height: 23em;
+    height: 27em;
     width: 20em;
 
 }
@@ -32,7 +32,7 @@ body {
 #leNom,
 #laDate,
 #leMdp,
-#bouton {
+#bouton,#motdepasse-info {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,7 +60,15 @@ input {
 }
 
 input[type=Submit] {
-    margin-top: 20px;
+    margin-bottom: 13px;
     width: 25%;
     padding: 5px;
+}
+
+.greenColor{
+    color: green;
+}
+
+.redColor{
+    color: red;
 }
